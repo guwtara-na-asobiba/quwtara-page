@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/blog/*",
+        "destination": "https://written-by-me.hatenadiary.jp",
+        "type": 302
+      }
+    ]
+  }
+}
