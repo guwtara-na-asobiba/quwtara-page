@@ -1,0 +1,12 @@
+steps:
+  -
+    id: 'npm install'
+    name: 'gcr.io/cloud-builders/npm'
+    args:
+      - install
+  -
+    id: 'run lint:js'
+    name: 'gcr.io/cloud-builders/npm'
+    args:
+      - run
+      - lint:js
