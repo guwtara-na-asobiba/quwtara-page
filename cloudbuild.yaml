@@ -1,13 +1,12 @@
-secrets:
-  -
-    kmsKeyName: projects/quwtara-tamago-don/locations/global/keyRings/firebase-quwtara/cryptoKeys/firebase-quwtara-deploy
-    secretEnv:
-      FIREBASE_TOKEN: CiQAKlM65H7knG0TaMTzcHfVHp46UH0OH9yAM/QskGnr9PRfKfESVgCq2uZvnEIYndAMFnkwZ0NYG6C6AgG1ySSI8BeANm4dphRSjrCoUU3wXTpMr2QgB6P5CL2apIwJavgGgjcRRlB3b1bE1hGdkl30HK5YXc2TVHS6/Dus
 steps:
   -
-    id: 'deploy to firebase'
-    name: 'gcr.io/$PROJECT_ID/firebase'
+    id: 'npm install'
+    name: 'gcr.io/cloud-builders/npm'
     args:
-      - deploy
-    secretEnv:
-      - FIREBASE_TOKEN
+      - install
+  -
+    id: 'run lint:js'
+    name: 'gcr.io/cloud-builders/npm'
+    args:
+      - run
+      - lint:js

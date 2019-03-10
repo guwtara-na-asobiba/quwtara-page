@@ -1,0 +1,24 @@
+{
+  "name": "quwtara-page",
+  "version": "1.0.0",
+  "description": "https://tamago-don.quwtara.space/ のソース",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint \"src/js/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guwtara-na-asobiba/quwtara-page.git"
+  },
+  "author": "myamyu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/guwtara-na-asobiba/quwtara-page/issues"
+  },
+  "homepage": "https://github.com/guwtara-na-asobiba/quwtara-page#readme",
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-google": "^0.12.0"
+  }
+}
