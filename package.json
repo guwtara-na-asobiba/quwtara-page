@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "eslint \"src/js/**/*.js\"",
+    "deploy": "firiebase deploy --only hosting --token \"$FIREBASE_TOKEN\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
