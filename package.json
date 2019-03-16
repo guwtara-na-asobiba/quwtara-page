@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "eslint \"src/js/**/*.js\"",
+    "build:doc": "vuepress build doc",
     "deploy": "firebase deploy --only hosting --token \"$FIREBASE_TOKEN\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/guwtara-na-asobiba/quwtara-page#readme",
   "devDependencies": {
     "eslint": "^5.15.1",
-    "eslint-config-google": "^0.12.0"
+    "eslint-config-google": "^0.12.0",
+    "vuepress": "^0.14.10"
   }
 }

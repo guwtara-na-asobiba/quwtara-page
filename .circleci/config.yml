@@ -29,6 +29,14 @@ jobs:
       - run:
           name: Run Eslint
           command: npm run lint:js
+  build:
+    <<: *exector
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run vuepress build
+          command: npm run build:doc
   deploy:
     <<: *exector
     steps:
@@ -46,9 +54,13 @@ workflows:
       - lint:
           requires:
             - setup
+      - build:
+          requires:
+            - setup
       - deploy:
           requires:
             - lint
+            - build
           filters:
             branches:
               only: master
