@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "eslint \"src/js/**/*.js\"",
-    "build:doc": "vuepress build doc",
+    "dev:doc": "vuepress dev docs",
+    "build:doc": "vuepress build docs",
     "deploy": "firebase deploy --only hosting --token \"$FIREBASE_TOKEN\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,7 @@
   "devDependencies": {
     "eslint": "^5.15.1",
     "eslint-config-google": "^0.12.0",
-    "vuepress": "^0.14.10"
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "^3.6.0"
   }
 }
