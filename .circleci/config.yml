@@ -29,7 +29,7 @@ jobs:
       - run: ls -l
       - run:
           name: Run Eslint
-          comcmand: npm run lint:js
+          command: npm run lint:js
   deploy:
     <<: *exector
     steps:
