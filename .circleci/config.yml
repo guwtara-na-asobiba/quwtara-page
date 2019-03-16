@@ -26,7 +26,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: ls -l
       - run:
           name: Run Eslint
           command: npm run lint:js
@@ -36,7 +35,9 @@ jobs:
       - attach_workspace:
           at: .
       - run: npm install --save firebase-tools
-      - run: npm run deploy
+      - run:
+          name: Deploy to Firebase Hosting.
+          command: npm run deploy
 workflows:
   version: 2
   deploy_to_hosting:
