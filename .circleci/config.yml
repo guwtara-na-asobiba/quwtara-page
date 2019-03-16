@@ -39,3 +39,4 @@ workflows:
   deploy_to_hosting:
     jobs:
       - setup
+      - lint
