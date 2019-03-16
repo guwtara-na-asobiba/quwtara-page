@@ -2,7 +2,7 @@
 
 永遠に工事中かもしれません。
 
-[ブログ](/blog/) でも見てください。
+[ブログ](https://written-by-me.hatenadiary.jp/) でも見てください。
 
 ----
 

@@ -63,3 +63,6 @@ workflows:
           requires:
             - lint
             - build
+          filters:
+            branches:
+              only: master
