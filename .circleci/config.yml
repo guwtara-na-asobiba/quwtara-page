@@ -20,13 +20,16 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - .
+            - ./*
   lint:
     <<: *exector
     steps:
       - attach_workspace:
           at: .
-      - run: npm run lint:js
+      - run: ls -l
+      - run:
+        name: Run Eslint
+        comcmand: npm run lint:js
   deploy:
     <<: *exector
     steps:
