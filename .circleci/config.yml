@@ -37,6 +37,7 @@ jobs:
       - run:
           name: Run vuepress build
           command: npm run build:doc
+      - run: ls -l dist
   deploy:
     <<: *exector
     steps:
