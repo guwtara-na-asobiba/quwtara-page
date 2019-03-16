@@ -39,12 +39,3 @@ workflows:
   deploy_to_hosting:
     jobs:
       - setup
-      - lint:
-        requires:
-          - setup
-      - deploy:
-        requires:
-          - lint
-        filters:
-          branches:
-            only: master
