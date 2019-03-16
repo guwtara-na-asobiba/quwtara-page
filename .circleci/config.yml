@@ -45,4 +45,6 @@ workflows:
       - lint:
           requires:
             - setup
-
+      - deploy:
+          requires:
+            - lint
