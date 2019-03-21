@@ -12,6 +12,12 @@
         "destination": "https://written-by-me.hatenadiary.jp",
         "type": 302
       }
+    ],
+    "rewrites": [
+      {
+        "source": "/quwtara-scripts/",
+        "function": "scripts"
+      }
     ]
   }
 }
