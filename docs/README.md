@@ -10,4 +10,3 @@
 
 - [Profile Generator](./profile-generator/)  
 とあるスパム系アカウントのTwitter Profileを真似たテキストをランダムで作るコンポーネントです。
-
