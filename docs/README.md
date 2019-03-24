@@ -1,11 +1,13 @@
 # TOP
 
-永遠に工事中かもしれません。
+なんとなく思いついたものを作って置いていくページです。  
 
-[ブログ](https://written-by-me.hatenadiary.jp/) でも見てください。
+コンテンツが充実するまでは[ブログ](https://written-by-me.hatenadiary.jp/)でも見てください。
 
 ----
 
-## このページについて
+## 作ってみたもの
 
-なんとなく思いついたものを作って置いていくページです。  
+- [Profile Generator](./profile-generator/)  
+とあるスパム系アカウントのTwitter Profileを真似たテキストをランダムで作るコンポーネントです。
+
