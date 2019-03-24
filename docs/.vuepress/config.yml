@@ -1,3 +1,20 @@
-title: ぐうたらな遊び場
+title: ぐうたら玉子の遊び場
 description: ここはぐうたらな遊び場です。
 dest: dist
+locales:
+  "/":
+    lang: ja
+themeConfig:
+  lastUpdated: true
+  repo: guwtara-na-asobiba/quwtara-page
+  locales:
+    "/":
+      label: 日本語
+      lastUpdated: 更新日
+      nav:
+        -
+          text: Home
+          link: /
+        -
+          text: ブログ
+          link: https://written-by-me.hatenadiary.jp/
