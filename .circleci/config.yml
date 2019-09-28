@@ -21,14 +21,6 @@ jobs:
           root: .
           paths:
             - ./*
-  lint:
-    <<: *exector
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          name: Run Eslint
-          command: npm run lint:js
   build:
     <<: *exector
     steps:
@@ -53,15 +45,11 @@ workflows:
   deploy_to_hosting:
     jobs:
       - setup
-      - lint:
-          requires:
-            - setup
       - build:
           requires:
             - setup
       - deploy:
           requires:
-            - lint
             - build
           filters:
             branches:
